@@ -7,43 +7,43 @@
 ## 📚 Tabla de Contenidos
 
 ### CONFIGURACIÓN
-0. [git config - Configuración de Git](docs/git-comandos/00-git-config.md)
+0. [git config - Configuración de Git](docs/00-git-config.md)
 
 ### COMANDOS BÁSICOS ESENCIALES
-1. [git add - Preparando Cambios](docs/git-comandos/01-git-add.md)
-2. [git commit - Guardando la Historia](docs/git-comandos/02-git-commit.md)
-3. [git status - Inspeccionando el Estado](docs/git-comandos/03-git-status.md)
-4. [git diff - Comparando Cambios](docs/git-comandos/04-git-diff.md)
-   - 4.1 [Referencias de Commits: ~, ^, y {}](docs/git-comandos/04.1-referencias-commits.md)
-5. [git log - Explorando la Historia](docs/git-comandos/05-git-log.md)
+1. [git add - Preparando Cambios](docs/01-git-add.md)
+2. [git commit - Guardando la Historia](docs/02-git-commit.md)
+3. [git status - Inspeccionando el Estado](docs/03-git-status.md)
+4. [git diff - Comparando Cambios](docs/04-git-diff.md)
+   - 4.1 [Referencias de Commits: ~, ^, y {}](docs/04.1-referencias-commits.md)
+5. [git log - Explorando la Historia](docs/05-git-log.md)
 
 ### GESTIÓN DE RAMAS
-6. [git branch - Gestionando Líneas de Desarrollo](docs/git-comandos/06-git-branch.md)
-7. [git checkout / git switch - Navegando el Código](docs/git-comandos/07-git-checkout-switch.md)
-8. [git merge - Integrando Cambios](docs/git-comandos/08-git-merge.md)
-9. [git rebase - Reescribiendo Historia](docs/git-comandos/09-git-rebase.md)
+6. [git branch - Gestionando Líneas de Desarrollo](docs/06-git-branch.md)
+7. [git checkout / git switch - Navegando el Código](docs/07-git-checkout-switch.md)
+8. [git merge - Integrando Cambios](docs/08-git-merge.md)
+9. [git rebase - Reescribiendo Historia](docs/09-git-rebase.md)
 
 ### TRABAJO CON REMOTOS
-10. [git clone - Copiando Repositorios](docs/git-comandos/10-git-clone.md)
-11. [git remote - Gestionando Repositorios Remotos](docs/git-comandos/11-git-remote.md)
-12. [git fetch - Descargando Cambios](docs/git-comandos/12-git-fetch.md)
-13. [git pull - Descargando e Integrando Cambios Remotos](docs/git-comandos/13-git-pull.md)
-14. [git push - Subiendo Cambios](docs/git-comandos/14-git-push.md)
+10. [git clone - Copiando Repositorios](docs/10-git-clone.md)
+11. [git remote - Gestionando Repositorios Remotos](docs/11-git-remote.md)
+12. [git fetch - Descargando Cambios](docs/12-git-fetch.md)
+13. [git pull - Descargando e Integrando Cambios Remotos](docs/13-git-pull.md)
+14. [git push - Subiendo Cambios](docs/14-git-push.md)
 
 ### CONTROL DE ESTADO Y VERSIONES
-15. [git reset - Moviendo Referencias](docs/git-comandos/15-git-reset.md)
-16. [git stash - Guardado Temporal](docs/git-comandos/16-git-stash.md)
-17. [git tag - Marcando Versiones](docs/git-comandos/17-git-tag.md)
-18. [git revert - Deshaciendo Commits Públicos](docs/git-comandos/18-git-revert.md)
-19. [git cherry-pick - Aplicando Commits Selectivos](docs/git-comandos/19-git-cherry-pick.md)
+15. [git reset - Moviendo Referencias](docs/15-git-reset.md)
+16. [git stash - Guardado Temporal](docs/16-git-stash.md)
+17. [git tag - Marcando Versiones](docs/17-git-tag.md)
+18. [git revert - Deshaciendo Commits Públicos](docs/18-git-revert.md)
+19. [git cherry-pick - Aplicando Commits Selectivos](docs/19-git-cherry-pick.md)
 
 ### LIMPIEZA Y MANTENIMIENTO
-20. [git clean - Limpiando Archivos No Rastreados](docs/git-comandos/20-git-clean.md)
-21. [git rm y git mv - Eliminando y Moviendo Archivos](docs/git-comandos/21-git-rm-mv.md)
+20. [git clean - Limpiando Archivos No Rastreados](docs/20-git-clean.md)
+21. [git rm y git mv - Eliminando y Moviendo Archivos](docs/21-git-rm-mv.md)
 
 ### REFERENCIAS Y FORMATO AVANZADO
-22. [Referencias y Placeholders de Formato](docs/git-comandos/22-referencias-placeholders.md)
-23. [Variables de Shell en Git - Nombres Dinámicos](docs/git-comandos/23-variables-shell.md)
+22. [Referencias y Placeholders de Formato](docs/22-referencias-placeholders.md)
+23. [Variables de Shell en Git - Nombres Dinámicos](docs/23-variables-shell.md)
 
 ---
 
@@ -88,11 +88,11 @@ Esta guía cubre los **21 comandos Git más importantes** que todo desarrollador
 
 Si eres nuevo en Git, te recomendamos empezar con:
 
-1. [git add](docs/git-comandos/01-git-add.md) - Aprende a preparar cambios
-2. [git commit](docs/git-comandos/02-git-commit.md) - Guarda tu trabajo
-3. [git status](docs/git-comandos/03-git-status.md) - Verifica el estado
-4. [git log](docs/git-comandos/05-git-log.md) - Explora la historia
-5. [git branch](docs/git-comandos/06-git-branch.md) - Trabaja con ramas
+1. [git add](docs/01-git-add.md) - Aprende a preparar cambios
+2. [git commit](docs/02-git-commit.md) - Guarda tu trabajo
+3. [git status](docs/03-git-status.md) - Verifica el estado
+4. [git log](docs/05-git-log.md) - Explora la historia
+5. [git branch](docs/06-git-branch.md) - Trabaja con ramas
 
 ---
 
