@@ -45,11 +45,28 @@
 22. [Referencias y Placeholders de Formato](docs/22-referencias-placeholders.md)
 23. [Variables de Shell en Git - Nombres Dinámicos](docs/23-variables-shell.md)
 
+### TRANSFERENCIA Y PARCHES
+24. [git format-patch / git am - Exportar e Importar Commits](docs/24-git-format-patch-am.md)
+
+### DIAGNÓSTICO Y RECUPERACIÓN
+25. [git reflog - Historial de Movimientos de HEAD](docs/25-git-reflog.md)
+26. [git blame - Ver Autoría por Línea](docs/26-git-blame.md)
+27. [git bisect - Encontrar Commits con Bugs](docs/27-git-bisect.md)
+
+### TRABAJO AVANZADO
+28. [git worktree - Varias Ramas Simultáneas](docs/28-git-worktree.md)
+29. [git archive / shortlog / describe - Utilidades](docs/29-git-archive-shortlog-describe.md)
+30. [git submodule - Repositorios Dentro de Repositorios](docs/30-git-submodule.md)
+31. [git notes - Anotaciones en Commits](docs/31-git-notes.md)
+
+### MANTENIMIENTO INTERNO
+32. [git gc / git fsck - Limpieza e Integridad del Repositorio](docs/32-git-gc-fsck.md)
+
 ---
 
 ## 📖 INTRODUCCIÓN
 
-Esta guía cubre los **21 comandos Git más importantes** que todo desarrollador debe conocer, desde principiante hasta experto. Cada comando incluye:
+Esta guía cubre los **32 comandos Git más importantes** que todo desarrollador debe conocer, desde principiante hasta experto. Cada comando incluye:
 
 ✅ **Funcionamiento interno** - Qué hace Git bajo el capó  
 ✅ **15-20+ opciones y flags** - Uso básico a avanzado  
@@ -96,8 +113,8 @@ Si eres nuevo en Git, te recomendamos empezar con:
 
 ---
 
-**Última actualización:** Febrero 2026  
-**Versión:** 2.0.0
+**Última actualización:** Marzo 2026  
+**Versión:** 3.0.0
 
 > 💡 **Tip**: Cada documento incluye enlaces de navegación [🔙] para volver al índice y ejemplos prácticos del mundo real.
 
