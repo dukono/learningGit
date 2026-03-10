@@ -234,6 +234,33 @@ git for-each-ref --format="%(refname:short) %(upstream:trackshort)" refs/heads/
 %%    # Literal '%'
 ```
 
+**Alineación y ancho de campo (git log):**
+
+```bash
+# Reservar espacio fijo ANTES de un placeholder
+%<(N)       # Alinear a la IZQUIERDA, reservar N caracteres (rellena con espacios)
+%>(N)       # Alinear a la DERECHA, reservar N caracteres
+%<|(N)      # Alinear a la izquierda hasta la columna N (posición absoluta)
+
+# Controlar truncado cuando el texto supera N caracteres
+%<(N,trunc)   # Truncar por la DERECHA  → "Juan Pér…"
+%<(N,ltrunc)  # Truncar por la IZQUIERDA → "…a García"
+%<(N,mtrunc)  # Truncar por el MEDIO    → "Jua…ría"
+
+# Ejemplo: autor siempre ocupa 20 caracteres
+git log --format="%h %<(20)%an %ad %s" --date=short
+
+# Ejemplo: con colores + ancho fijo + truncado
+git log --format="%C(yellow)%h%C(reset) %C(green)%<(20,trunc)%an%C(reset) %C(blue)%ad%C(reset) %s" --date=short
+
+# Salida aproximada:
+# a1b2c3d Juan Pérez           2024-02-13 Add login feature
+# e4f5g6h María García         2024-02-10 Fix bug in payment
+# f1c3e5a Alejandro Fernánde…  2024-02-08 Refactor auth module
+```
+
+> ⚠️ **Nota:** `%<(N)` aplica al placeholder **inmediatamente siguiente**. Los códigos de color `%C(...)` no cuentan como caracteres visibles, así que puedes combinarlos libremente.
+
 **Ejemplos prácticos con git log:**
 
 ```bash
@@ -528,6 +555,11 @@ git log --format="Commit: %h%nAutor fecha: %ai%nCommitter fecha: %ci%nDiferencia
 | `%an` (git log) | Autor nombre | `Juan Pérez` |
 | `%ad` (git log) | Autor fecha | Según `--date` |
 | `%d` (git log) | Refs decoradas | `(HEAD -> main, origin/main)` |
+| `%<(N)` (git log) | Alinear izq. N chars (siguiente campo) | `Juan Pérez          ` |
+| `%>(N)` (git log) | Alinear dcha. N chars (siguiente campo) | `         Juan Pérez` |
+| `%<(N,trunc)` (git log) | Alinear izq. N chars + truncar dcha. | `Juan Pér…` |
+| `%<(N,ltrunc)` (git log) | Alinear izq. N chars + truncar izq. | `…a García` |
+| `%<(N,mtrunc)` (git log) | Alinear izq. N chars + truncar medio | `Jua…ría` |
 
 ---
 
